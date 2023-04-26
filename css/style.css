@@ -9,6 +9,12 @@ body {
     background-size: 150%;
 }
 
+@media (pointer:none), (pointer:coarse) {
+body {
+    background-size: auto;
+}
+}
+
 
 canvas { 
     position: absolute;
