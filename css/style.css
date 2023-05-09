@@ -87,7 +87,7 @@ footer {
     .text-wrapper {
         font-size: 30px;
         margin-right: 20px;
-        color: green;
+        margin-left: 30px;
     }
     .synth-text {
         font-size: 20px;
@@ -98,11 +98,11 @@ footer {
     }
     ol.img span {
         position: absolute;
-        left: -150px;
+        left: -135px;
         top: 0px;
     }
     ol li {
-        margin-left: 70px;
+        margin-left: 120px;
         padding-bottom: 50px; /* Add some padding to create space between list items */
         min-height: 250px; /* Optional, use this if you want to ensure a certain minimum height */
     }
