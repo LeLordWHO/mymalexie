@@ -76,3 +76,23 @@ footer {
     font-size: 25px;   
     line-height: 1.3em;
 }
+
+.book-cover{
+    width: 150px; 
+    height: 206px;
+}
+
+/* Small screens (max width 480px) */
+@media only screen and (max-width: 480px) {
+    .img li {
+      width: 100%;
+      display: block;
+      margin-bottom: 1em;
+    }
+    .img li span {
+      float: none;
+      display: block;
+      margin-right: 0;
+      text-align: center;
+    }
+  }
