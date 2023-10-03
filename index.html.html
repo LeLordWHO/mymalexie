@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-10-03 Tue 17:01 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="hardiman" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<p>
+&lt;!DOCTYPE html&gt;<br />
+&lt;html lang="en"&gt;<br />
+  &lt;head&gt;<br />
+    &lt;meta charset="utf-8"&gt;<br />
+    &lt;title&gt;Mymalexie - Club de lecture&lt;/title&gt;<br />
+    &lt;link rel="icon" type="image/png" href="img/fav.png"&gt;<br />
+    &lt;link rel="stylesheet" href="css/style.css"&gt;<br />
+    &lt;link href="<a href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css</a>" rel="stylesheet" /&gt;<br />
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br />
+  &lt;/head&gt;<br />
+  &lt;body&gt;<br />
+    &lt;div class=text-wrapper&gt;<br />
+      &lt;h1&gt;Mymalexie&lt;/h1&gt;<br />
+      &lt;h2&gt;Club de lecture&lt;/h2&gt;<br />
+      &lt;ol reversed class="img"&gt;<br />
+	&lt;li&gt; &lt;span&gt;&lt;a href="<a href="https://www.fr.fnac.ch/a17066567/Gabrielle-Zevin-Tomorrow-and-Tomorrow-and-Tomorrow">https://www.fr.fnac.ch/a17066567/Gabrielle-Zevin-Tomorrow-and-Tomorrow-and-Tomorrow</a>"&gt;&lt;img src="covers/tomorrow-tomorrow-tomorrow-cover.jpg" alt="tomorrow-tomorrow-tomorrow-cover" class="book-cover"&gt;&lt;/a&gt;&lt;/span&gt; &lt;i&gt;Tomorrow and Tomorrow and Tomorrow&lt;/i&gt; — Gabrielle Zevin &lt;br&gt;<br />
+    Jeudi 2 Novembre 2023 à 14h00<br />
+    &lt;div class="synth-text"&gt; &lt;b&gt;Summary :&lt;/b&gt; TBA<br />
+      &lt;/div&gt;<br />
+  &lt;li&gt; &lt;span&gt;&lt;a href="<a href="https://www.orellfuessli.ch/shop/home/artikeldetails/A1001303235?ProvID=10917751&amp;gclid=Cj0KCQjw84anBhCtARIsAISI-xc1ezdGBc-8Cmm-GzlT3QXVr0NyzkFTcfArtsnFQesyq6WpvRpS7mwaAtsOEALw_wcB">https://www.orellfuessli.ch/shop/home/artikeldetails/A1001303235?ProvID=10917751&amp;gclid=Cj0KCQjw84anBhCtARIsAISI-xc1ezdGBc-8Cmm-GzlT3QXVr0NyzkFTcfArtsnFQesyq6WpvRpS7mwaAtsOEALw_wcB</a>"&gt;&lt;img src="covers/alice-cover.jpg" alt="alice-cover" class="book-cover"&gt;&lt;/a&gt;&lt;/span&gt; &lt;i&gt;Alice's Adventures in Wonderland and Through the Looking Glass&lt;/i&gt; — Lewis Carroll &lt;br&gt;<br />
+    Mercredi 20 Septembre 2023 à 10h00<br />
+    &lt;div class="synth-text"&gt; &lt;b&gt;Summary :&lt;/b&gt; The book elicited a range of reactions from our club members. While certain members were absolutely enamored, finding it a delightful embodiment of the joyous process an adult sharing his enchanting vision of the world with a child, others were less enthusiastic (notable critique from some members was the perceived lack of a strong narrative thread). The tea-party scene was a standout for many, with its fascinating alternative logical rules, as well as the encounter with the Caterpillar, delving into themes of identity and transformation, and the moment a bird mistakes Alice for a serpent. &lt;a href="img/brunch4.jpg" data-lightbox="image-1"&gt;The Brunch&lt;/a&gt;.<br />
+      &lt;/div&gt;<br />
+    &lt;li&gt;&lt;span&gt;&lt;a href="<a href="https://www.payot.ch/Detail/lanalphabete-agota_kristof-9782881825125">https://www.payot.ch/Detail/lanalphabete-agota_kristof-9782881825125</a>"&gt;&lt;img src="covers/analphabete-cover.jpg" alt="analphabete-cover" class="book-cover"&gt;&lt;/a&gt;&lt;/span&gt; &lt;i&gt;L'Analphabète &amp; Le grand cahier&lt;/i&gt; — Agota Kristof &lt;br&gt;<br />
+	  Lundi 17 août 2023 à 10h30<br />
+	  &lt;div class="synth-text"&gt;&lt;b&gt;Summary :&lt;/b&gt; Chacun s'accorde à dire que &lt;i&gt;Le Grand Cahier&lt;/i&gt; a su captiver avec son style épuré, son ambiance surréaliste, ses personnages hors du commun et ses rebondissements inattendus, le tout apporté par une narration en première personne plurielle. Concernant 'l'Analphabète', un membre a été particulièrement marqué par la divergence entre ses valeurs et celles de l'autrice, une perception qui a d'ailleurs teinté sa lecture de &lt;i&gt;Le Grand Cahier.&lt;/i&gt; &lt;a href="img/brunch3.jpeg" data-lightbox="image-1"&gt;Le brunch.&lt;/a&gt;.&lt;/div&gt;<br />
+	&lt;li&gt;&lt;span&gt;&lt;a href="<a href="https://www.amazon.com/Round-House-Novel-Louise-Erdrich/dp/0062065254">https://www.amazon.com/Round-House-Novel-Louise-Erdrich/dp/0062065254</a>"&gt;&lt;img src="covers/round<sub>house</sub>-cover.jpg" alt="round<sub>house</sub>-cover" class="book-cover"&gt;&lt;/a&gt;&lt;/span&gt; &lt;i&gt;The Round House: A Novel&lt;/i&gt; — Louise Erdrich &lt;br&gt;<br />
+	  Mercredi 14 juin 2023 à 14h00<br />
+    &lt;div class="synth-text"&gt;&lt;b&gt;Summary :&lt;/b&gt; Everyone enjoyed this book. Particular highlights were: the context of a first nation reservation (for many of us, a relatively unknown culture), the theme of justice (in its many forms and with its many limitations), the mixture of multiple spiritual systems and the beautiful descriptions of a young teenager wrestling with his emotions surrounding parental strife. The book captures a summer of extreme trauma that simultaneously contains many moments of simply being a teenager with your friends over the summer holidays. &lt;a href="img/brunch2.jpeg" data-lightbox="image-1"&gt;Afternoon Tea.&lt;/a&gt;.&lt;/div&gt;<br />
+	&lt;li&gt;&lt;span&gt;&lt;a href="<a href="https://www.payot.ch/Detail/des_eclairs-echenoz_jean-9782707321268">https://www.payot.ch/Detail/des_eclairs-echenoz_jean-9782707321268</a>"&gt;&lt;img src="covers/des<sub>éclairs</sub>-cover.jpg" alt="des<sub>éclairs</sub>-cover" class="book-cover"&gt;&lt;/a&gt;&lt;/span&gt; &lt;i&gt;Des éclairs&lt;/i&gt; — Jean Echenoz<br />
+	  &lt;br&gt;<br />
+	  Lundi 9 mai 2023 à 10h30.&lt;br&gt;<br />
+    &lt;div class="synth-text"&gt;&lt;b&gt;Synthèse :&lt;/b&gt; Les avis sont partagés. Alors que certains apprécient la prose aérée, d’autres la trouve trop simple. Néon-moins, tout le monde s’accorde sur le fait que l’histoire est intéressante et ressortons enrichis de cette lecture nous ayant fait découvrir l’histoire de Gregor. Une de nos membres a été particulièrement frappée par l'injustice que Gregor a subie tout au long de sa vie, s'identifiant d'autant plus à lui en tant que compatriote serbe. &lt;a href="img/brunch1.jpeg" data-lightbox="image-1"&gt;Le brunch&lt;/a&gt;.&lt;/div&gt;<br />
+      &lt;/ol&gt;<br />
+    &lt;/div&gt;<br />
+    &lt;footer&gt;<br />
+		&lt;a href="#top"&gt;&lt;img src="img/fav.png" height="40px" style="position: relative; top: 0px"&gt;&lt;/a&gt;<br />
+	&lt;/footer&gt;&lt;/body&gt;<br />
+  &lt;script src="<a href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js">https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js</a>"&gt;&lt;/script&gt;<br />
+&lt;/html&gt;<br />
+</p>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: hardiman</p>
+<p class="date">Created: 2023-10-03 Tue 17:01</p>
+</div>
+</body>
+</html>
